@@ -9,17 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@uniformdev/canvas": "^19.57.0",
+    "@uniformdev/canvas-next": "^19.57.0",
+    "@uniformdev/canvas-react": "^19.57.0",
+    "@uniformdev/cli": "^19.57.0",
+    "@uniformdev/context": "^19.57.0",
+    "@uniformdev/context-next": "^19.57.0",
+    "@uniformdev/context-react": "^19.57.0",
+    "@uniformdev/project-map": "^19.57.0",
+    "next": "latest",
     "react": "latest",
-    "react-dom": "latest",
-    "next": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
-    "typescript": "latest",
-    "@types/react": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "latest"
   }
 }
