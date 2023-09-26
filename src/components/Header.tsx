@@ -38,6 +38,6 @@ const Header: FC<HeaderProps> = ({ imageUrl, imageAlt }) => {
   )
 }
 
-registerUniformComponent({ type: 'Header', component: Header });
+registerUniformComponent({ type: 'header', component: Header });
 
 export default Header;
