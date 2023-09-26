@@ -1,0 +1,28 @@
+composition:
+  _name: Root
+  _id: de535505-2549-4622-b267-919ef32ce947
+  _slug: /
+  type: page
+  slots:
+    content:
+      - _id: 75fe0bdb-2429-42d6-ab52-51c03ffb20fb
+        type: header
+        parameters:
+          title:
+            type: text
+            value: Get started by editing
+          imageAlt:
+            type: text
+            value: T
+          imageUrl:
+            type: image
+            value: https://mirumee.com/_next/static/media/logo.61733806.svg
+          displayName:
+            type: text
+            value: This is the header component
+          highlightedTitle:
+            type: text
+            value: the composition in Uniform
+created: '2023-09-26T15:39:05.367775+00:00'
+modified: '2023-09-26T15:47:56.642173+00:00'
+pattern: false
