@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import { UniformComposition, UniformSlot } from '@uniformdev/canvas-react'
 import { withUniformGetServerSideProps } from '@uniformdev/canvas-next/route'
 import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, RootComponentInstance, createUniformApiEnhancer } from '@uniformdev/canvas'
+import '../components/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
