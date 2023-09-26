@@ -2,13 +2,15 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import { UniformComposition, UniformSlot } from '@uniformdev/canvas-react'
 import { withUniformGetServerSideProps } from '@uniformdev/canvas-next/route'
-import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, RootComponentInstance } from '@uniformdev/canvas'
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, RootComponentInstance, createUniformApiEnhancer } from '@uniformdev/canvas'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const contextualEditingEnhancer = createUniformApiEnhancer({ apiUrl: '/api/preview' });
+
 export default function Page({ data }: { data: RootComponentInstance }) {
   return (
-    <UniformComposition data={data}>
+    <UniformComposition data={data} contextualEditingEnhancer={contextualEditingEnhancer} contextualEditingDefaultPlaceholder="This is a placeholder text">
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
       >
