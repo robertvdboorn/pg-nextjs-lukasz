@@ -6,7 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "uniform:pull:compositions": "uniform canvas composition pull ./uniform/canvas/compositions",
+    "uniform:pull:components": "uniform canvas component pull ./uniform/canvas/components",
+    "uniform:pull:project-map-definitions": "uniform project-map definition pull ./uniform/canvas/project-map/definitions",
+    "uniform:pull:project-map-nodes": "uniform project-map node pull ./uniform/canvas/project-map/nodes",
+    "uniform:pull": "run-s uniform:pull:compositions uniform:pull:components uniform:pull:project-map-definitions uniform:pull:project-map-nodes",
+    "uniform:push:compositions": "uniform canvas composition push ./uniform/canvas/compositions",
+    "uniform:push:components": "uniform canvas component push ./uniform/canvas/components",
+    "uniform:push:project-map-definitions": "uniform project-map definition push ./uniform/canvas/project-map/definitions",
+    "uniform:push:project-map-nodes": "uniform project-map node push ./uniform/canvas/project-map/nodes",
+    "uniform:push": "run-s uniform:push:compositions uniform:push:components uniform:push:project-map-definitions uniform:push:project-map-nodes"
   },
   "dependencies": {
     "@uniformdev/canvas": "^19.57.0",
